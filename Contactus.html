@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>成都荣耀世纪文化传媒有限公司</title>
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/zy.css">
+
+<script type="text/javascript" src="js/jQuery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+<!--头部-->
+<div class="content">
+    <div class="bj_jz">
+        <div class="logo"><a href="./"><img src="images/logo_03.png"></a></div>
+        <ul class="venus-menu">
+            <li><a href="index.html"><i class="icon-home"></i>首页</a></li>
+            <li>
+                <a href="company.html"><i class="icon-magic"></i>公司简介</a>
+            </li>
+            <li>
+                <a href="Anchor.html"><i class="icon-thumbs-up"></i>主播展示</a>
+            </li>
+            <li>
+                <a href="product.html"><i class="icon-thumbs-up"></i>产品展示</a>
+            </li>
+            <li>
+                <a href="recruitment.html"><i class="icon-quote-right"></i>在线招募</a>
+            </li>
+            <li>
+                <a href="news.html"><i class="icon-envelope-alt"></i>新闻动态</a>
+            </li>
+            <li class="active"><a href="Contactus.html"><i class="icon-envelope-alt"></i>联系我们</a></li>
+            <li class="search">
+                <a href="recruitment.html"><img src="images/t_tb_03.png"><span>在线报名</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--内容-->
+<div class="ziye_tu_bj">
+    <img class="zyt" src="images/lxwm_t_02.jpg">
+    <div class="ziye_tu_nr">
+        <h1>联系我们<span>Contact us</span></h1>
+        <p><img src="images/swsj_03.png"><a href="index.html">首页 </a> > 联系我们</p>
+    </div>
+</div>
+
+<!--二级导航-->
+<div class="ziye_ej_b">
+    <ul class="ziye_ejjz">
+        <li class="ziyehdh_dq"><a href="news.html">联系我们</a></li>
+    </ul>
+</div>
+
+<div class="ksj_jianjie">
+    <div class="ksj_jianjie_z">
+        <div class="lianxi_wm">
+            <h1>成都荣耀世纪文化传媒有限公司</h1>
+            <p>电话：400-6677-937</p>
+            <p>手机：18275330710</p>
+            <p>邮箱：puange@outlook.com</p>
+            <p>QQ：2239329788</p>
+            <p>公司地址：成都金堂希望未来城万千购物中心</p>
+        </div>
+        <div class="bd_dt">
+            <!--sss-->
+            <div id="wrap" class="my-map">
+                <div id="mapContainer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页尾-->
+<div class="yw">
+    <div class="yw_jz">
+        <div class="liebiao">
+            <div class="zuo_logo">
+                <img src="images/logo_03.png">
+                <ul>
+                    <li>
+                        <h3>公司简介</h3>
+                        <a href="company.html">公司简介</a>
+                        <a href="#">企业文化</a>
+                    </li>
+                    <li>
+                        <h3>主播展示</h3>
+                        <a href="Anchor.html">主播展示</a>
+                        <a href="#">美食达人</a>
+                        <a href="#">旅游达人</a>
+                        <a href="#">服装达人</a>
+                    </li>
+                    <li>
+                        <h3>在线招募</h3>
+                        <a href="recruitment.html">报名表</a>
+                        <a href="#">在线QQ</a>
+                    </li>
+                    <li>
+                        <h3>新闻动态</h3>
+                        <a href="news.html">公司新闻</a>
+                        <a href="#">行业新闻</a>
+                    </li>
+                    <li>
+                        <h3>联系我们</h3>
+                        <a href="Contactus.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ewm">
+                <div class="lxfs">
+                    <h1>192-7533-0710</h1>
+                    <span>24小时联系电话</span>
+                    <div class="qqzx"><a href="#">QQ在线客服</a></div>
+                </div>
+                <div>
+                    <div class="sm"><img src="images/ewm_03.jpg"><span>官方订阅号</span></div>
+                    <div class="sm"><img src="images/ewm_03.jpg"><span>官方服务号</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="beianhao">
+            <p>荣耀世纪文化传媒有限公司  京ICP备15024691号-1京公网安备 11010502030384号</p>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<!--百度地图-->
+	<script type="text/javascript">
+		//百度地图API功能
+		function loadJScript() {
+			var script = document.createElement("script");
+			script.type = "text/javascript";
+			script.src = "http://api.map.baidu.com/api?v=2.0&ak=fkdS7vuZNHUBVUEkr7yKTmRwXFViBEbe&callback=init";
+			document.body.appendChild(script);
+		}
+
+		function init() {
+			var map = new BMap.Map("mapContainer"); // 创建Map实例
+			var point = new BMap.Point(104.465777,30.856048); // 创建点坐标
+			map.centerAndZoom(point, 15); // 初始化地图，设置中心点坐标和地图级别
+			map.enableScrollWheelZoom(); //启用滚轮放大缩小
+			var marker = new BMap.Marker(point);  // 创建标注
+			map.addOverlay(marker);               // 将标注添加到地图中
+			marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+		}
+		window.onload = loadJScript; //异步加载地图
+	</script>
+ <!--百度地图结束-->
+</html>
